@@ -12,7 +12,7 @@
 
 ### Network Resources
 * **Client/Server Model**: dedicated server to provide access to files, scanners/printers, etc
-* **Peer-to-Peer Model**: files and printers are shared directly to others
+* **Peer-to-Peer (P2P) Model**: files and printers are shared directly to others
 
 ### Network Geography
 * **Personal Area Network (PAN)**: smallest wired/wireless network - bluetooth and USB
@@ -25,15 +25,15 @@
 
 #### Wired
 * **Bus**: single cable where each device connects to it (vampire tap, T-connector)
-* **Ring**: single cable in a loop where each device connects to ring. A token ring passes a token around one device at a time (like a 'talking stick'). FDDI (fibre) rings are dual rings, one device goes down, go in the other direction to continue communication.
+* **Ring**: single cable in a ring where each device connects to ring. A token ring passes a token around one device at a time (like a 'talking stick'). FDDI (fibre) rings are dual rings, if one device goes down then go in other direction to other end, then back for communication.
 * **Star**: all devices connected to a central point (switch)
-* **Hub-and-Spoke**: star top but with WAN links, connects multiple sites
+* **Hub-and-Spoke**: multiple star topologies with WAN links, used to connect multiple sites
 * **Full-Mesh**: every device is connected to each other
 * **Partial-Mesh**: mix of full-mesh and hub-and-spoke, each node can be rerouted through another link/s
 
 #### Wireless
 * **Infrastructure Mode**: use wireless access point as a centralised point, has wireless security
-* **Ad-hoc Mode**: connect device to device dynamically, uses a p2p network
+* **Ad-hoc Mode**: connect device to device dynamically, uses a p2p network to communicate
 * **Wireless Mesh**: combine  wireless technologies (wifi, microwave, satelite, radio) to create a mesh network
 
 ### Internet of Things (IoT)
@@ -42,5 +42,5 @@
 * **Radio-frequency Identification (RFID)**: embedded chip with electro-magnetic fields to read tag
 * **Near-field Communication (NFC)**: 4cm range communication - apple-pay
 * **Infrared (IR)**: line of sight communication with infrared frequencies
-* **Z-Wave**: short-range and low-latency but slow-rates and less power consumption than wifi (used for home automation)
-* **ANT+**: collection and transfer of sensory data (car tyre pressure, lights on/off)
+* **Z-Wave**: short-range and low-latency but slow-rates and less power consumption than wifi - home automation
+* **ANT+**: collection and transfer of sensory data (car tyre pressure, lights on/off, etc)
