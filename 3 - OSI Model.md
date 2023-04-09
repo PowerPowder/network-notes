@@ -7,8 +7,6 @@
 <u>**D**</u>ata
 <u>**P**</u>rocessing
 
-# Flip layer order when done
-
 ## L1 - Physical (Bits)
 * **Media** - cables (fibre optic, ethernet, coaxial), radio (bluetooth, wifi, nfc)
 * **Devices** - hubs, access points, media converters
@@ -44,6 +42,7 @@
 
 ## L4 - Transport (TCP - Segments, UDP - Datagrams)
 * **TCP** is more overhead but is reliable, **UDP** has less overhead and is unreliable
+
 | TCP | UDP |
 | --- | --- |
 | Reliable | Unreliable |
@@ -64,5 +63,31 @@
 * **Devices**: WAN accelerators, load balancers and firewalls
 
 ## L5 - Session (Data)
+* Keeps conversations separate to prevent intermingling of data from other sessions
+* **Set up**: check user credentials, assign a unique number to session
+* **Maintain**: transfer data, reestablish connection if lost, acknowledge receipt (acknowledge data was received)
+* **Tear down**: end the session when transfer is done or when the other party disconnects
+* **Examples**:
+    * H.323 - set up, maintain, tear down voice/video connections using Real-time Transport Protocol (RTP)
+    * NetBIOS - share files over a network
+
 ## L6 - Presentation (Data)
+* **Data formatting**: data is formatted to have compatibility with different devices - ASCII (ensures readability, standardised formatting, syntax for L7), GIF, JPG, PNG, etc
+* **Encryption**: encrypt data to stop eavesdroppers from seeing private information (usernames, passwords, credit card info) as it is transmitted - Transport Layer Security (TLS) or Secure Sockets Layer (SSL)
+* **Examples**: scripting languages (for formating data, HTML, XML, PHP, JS), standard text (ASCII, Unicode, EBCDIC), pictures, movie files, encryption algorithms (TLS, SSL)
+
 ## L7 - Application (Data)
+* **Application Services**: combines communicating components from network applications, some include:
+    * File transfer
+    * File sharing
+    * Email
+    * Remote access
+    * Network management activities
+    * Client server processes
+* **Service Advertisement**: applications announce to devices the services they offer, printers and file servers may register with Active Directory instead
+* **Examples**:
+    * Email applications (POP3, IMAP)
+    * Web browsing (HTTP, HTTPS)
+    * Domain Name Service (DNS)
+    * File Transfer (FTP, FTPS, SFTP)
+    * Remote access (TELNET, SSH, SNMP)
