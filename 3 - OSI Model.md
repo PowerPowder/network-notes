@@ -1,4 +1,4 @@
-## OSI Model
+# OSI Model
 <u>**A**</u>ll
 <u>**P**</u>eople
 <u>**S**</u>eem
@@ -41,7 +41,7 @@
 * **Devices**: Routers, multi-level-switches (L2 switch and L3 router)
 
 ## L4 - Transport (TCP - Segments, UDP - Datagrams)
-* **TCP** is more overhead but is reliable, **UDP** has less overhead and is unreliable
+* **TCP** is more overhead but is reliable, **UDP** has less overhead but is unreliable
 
 | TCP | UDP |
 | --- | --- |
@@ -51,7 +51,7 @@
 | Segment sequencing | No sequencing |
 | Acknowledges segments | No acknowledgement | 
 
-* **Three-way-handshake**:
+* **Three-way-handshake**: TCP uses control flags SYN, SYN ACK, ACK
 <p align="center">
     <img src="images/3WH.png" width="250px" alt="three way handshake">
 </p>
@@ -69,17 +69,21 @@
 * **Tear down**: end the session when transfer is done or when the other party disconnects
 * **Examples**:
     * H.323 - set up, maintain, tear down voice/video connections using Real-time Transport Protocol (RTP)
-    * NetBIOS - share files over a network
+    * NetBIOS - share files over the network
 
 ## L6 - Presentation (Data)
 * **Data formatting**: data is formatted to have compatibility with different devices - ASCII (ensures readability, standardised formatting, syntax for L7), GIF, JPG, PNG, etc
 * **Encryption**: encrypt data to stop eavesdroppers from seeing private information (usernames, passwords, credit card info) as it is transmitted - Transport Layer Security (TLS) or Secure Sockets Layer (SSL)
-* **Examples**: scripting languages (for formating data, HTML, XML, PHP, JS), standard text (ASCII, Unicode, EBCDIC), pictures, movie files, encryption algorithms (TLS, SSL)
+* **Examples**:
+    * Scripting languages (for formating data, HTML, XML, PHP, JS)
+    * Standard text (ASCII, Unicode, EBCDIC)
+    * GIF, JPG TIF SVG PNG, etc
+    * MPG, MOV, etc
+    * Encryption algorithms (TLS, SSL)
 
 ## L7 - Application (Data)
 * **Application Services**: combines communicating components from network applications, some include:
-    * File transfer
-    * File sharing
+    * File transfer/Sharing
     * Email
     * Remote access
     * Network management activities
@@ -91,3 +95,41 @@
     * Domain Name Service (DNS)
     * File Transfer (FTP, FTPS, SFTP)
     * Remote access (TELNET, SSH, SNMP)
+
+# Encapsulation and Decapsulation
+* **Encapsulation**: putting headers (and sometimes trailers) around data, moving down layers
+* **Decapsulation**: removing headers (and sometimes trailers) from data, moving up layers
+* **Protocol Data Unit (PDU)**: a single unit of info transmitted in a network
+* **Maximum Transmission Unit (MTU)**: size of the largest packet that is accepted, this is 1500 bytes
+
+<p align="center">
+    <img src="images/encapsulation.png" width="450px" alt="Encapsulation">
+</p>
+
+* **TCP header** (40-60 bytes):
+<p align="center">
+    <img src="images/TCP-header.png" width="450px" alt="TCP header">
+</p>
+
+* **TCP header control flags**:
+    * SYN (Synchronisation) - sync connection during 3WH
+    * ACK (Acknowledgement) - acknowledge successful reciept of the packets during 3WH
+    * FIN (Finished) - tear down virtual connection created by 3WH and SYN flag
+    * RST (Reset) - used when client/server receives an unexpected packet during connection
+    * PSH (Push) - data is given high priority by sender
+    * URG (Urgent) - like push but data is given high priority by receiver
+
+* **UDP header** (8 bytes):
+<p align="center">
+    <img src="images/UDP-header.png" width="300px" alt="UDP header">
+</p>
+
+* **IP header** (20-24 bytes):
+<p align="center">
+    <img src="images/IP-header.png" width="450px" alt="IP header">
+</p>
+
+* **Ethernet header** (18 bytes):
+<p align="center">
+    <img src="images/ethernet-header.png" width="450px" alt="Ethernet header">
+</p>
