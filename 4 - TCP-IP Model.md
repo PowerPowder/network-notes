@@ -44,7 +44,7 @@
 | HTTP | 80 | Insecure web browsing |
 | POP3 | 110 | Receive incoming emails, stores and forward communication |
 | NTP | 123 | Keep accurate time for clients on a network |
-| NetBIOS | 139 | Allows applications on separate device to share files/printers on LAN |
+| NetBIOS | 139 | Allows applications on separate devices to share files/printers on LAN |
 | IMAP | 143 | Retreive emails over a TCP connection, keeps emails synced on all devices |
 | SNMP | 161/162 | Collect info on network devices (routers, switches, etc) and monitor status |
 | LDAP | 389 | Insecure directory service on network |
@@ -66,6 +66,6 @@
 * **UDP**: detects corrupt packets when received by a client using a checksum
 * **ICMP**: communicate info about network connectivity issues back to sender
 * **Generic Routing Encapsulation (GRE)**: create a GRE tunnel over a public network, encapsulates the data, is a virtual point-to-point link.
-* **Internet Protocol Security (IPSec)**: secure protocols at networking/packet processing layer used to protect data flows between peers. Two protocols used in IPSec: 
+* **Internet Protocol Security (IPSec)**: secure protocols at networking/packet processing layer used to protect data flows between peers (secure version of GRE). Two protocols used in IPSec: 
     * Authentication header (AH) - provides integrity and authentication
     * Encapsulating Security Payload (ESP) - provides encryption and integrity for data packets sent over IPSec
