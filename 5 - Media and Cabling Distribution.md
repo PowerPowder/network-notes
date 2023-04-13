@@ -52,3 +52,55 @@
 </p>
 
 * Not used much today but still used in ISDN modem, T1/E1 modem connection
+
+## Fiber Media
+
+* **Fibre optic cable**: uses LED/laser in a thin glass fibre, immune to EMI, 100s of meters, more range and bandwitdth than copper, but is expensive and harder to work with
+
+### Multimode Fibre and Single-Mode Fibre
+| MMF (blue/orange cables) | SMF (yellow cables) |
+| --- | --- |
+| Larger core size | Smaller core size |
+| Covers shorter distances | Covers longer distances |
+| Less expensive | More expensive |
+
+### Fibre Optic Connectors
+
+<p align="center">
+    <img src="images/fibre-connectors.png" width="300px" alt="Fibre connectors">
+</p>
+
+* **Angled Physical Contact (APC)**: angles up on connection - green
+* **Ultra Physical Contact (UPC)**: goes straight through on connection - blue
+
+### Wavelength Division Multiplexing
+
+<p align="center">
+    <img src="images/wavelength-multiplexing.png" width="350px" alt="Fibre wavelength multiplexing and demulitplexing">
+</p>
+
+| | Coarse WDM | Dense WDM |
+| --- | --- | --- |
+| Wavelength channels | Up to 18 channels | Up to 80 channels |
+| Channel Distance | 20nm | 0.8nm |
+| Speed | Up to 10 Gbps (Ethernet)<br>Up to 16 Gbps (Fibre) | Up to 8 Tbps (100Gbps/channel) |
+| Used by | Home, businesses, offices | ISPs, backbones |
+
+## Transceivers
+* Fibre optic can go 40km+ and carry speeds of 60-70 Tbps+
+* Copper cables can go up to 100m and carry speeds up to 10 Gbps
+* **Media converter** or **Transceiver**: convert media from one format to another - ethernet to fibre optic, coaxial to fibre optic
+
+### Transceivers
+* **Bidirectional/half-duplex**: devices take turn sending/receiving
+* **Full duplex**: devices can communicate at the same time
+
+### Types
+| Transceiver | Speed |
+| --- | --- |
+| GBIC | 1 Gbps |
+| SFP | 4.2 Gbps |
+| QSFP | 16 Gbps |
+| QSFP+ | 41.2 Gbps |
+| QSFP28 | 100 Gbps |
+| QSFP56 | 200 Gbps |
