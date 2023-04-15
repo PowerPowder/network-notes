@@ -104,3 +104,26 @@
 | QSFP+ | 41.2 Gbps |
 | QSFP28 | 100 Gbps |
 | QSFP56 | 200 Gbps |
+
+## Cable Distribution
+* System to connect network's backbone in main distribution frame to intermediate distribution frame and end user wall jacks.
+
+### Components
+* **Demarcation point**: WAN connection enters building - a box that goes from LAN to WAN
+* **Backbone switch**: connects everyything to network from demarcation point
+* **Edge switch**: closer to users, connects to backbone switch
+* **Main Distribution Frame (MDF)**: telecommunications closet, is the main starting point for all interior cabling (like a tree trunk)
+* **Cable tray**: structure to securely support cables going horizontally and vertically
+* **Intermediate Distribution Frame (IDF)**: contains edge switch, patch panel and other equipment to support floor and offices
+* **Punch Down Block**: located in MDF and IDF
+    * 66 block: used for phones, older CAT 3 networks
+    * **110 block**: voice/data applications, CAT 5 and above
+    * Krone block: proprietary European version of 110 block
+    * BIX block: proprietary block
+* **Patch panel**: device wwith jacks that connects wiring from jack to network switch - protects switch ports from getting ports plugged in and out repeatedly. There are wall mounted and server rack panels 
+    * Copper patch panels: punches down on cable
+    * Fibre patch panels: cable is not punched down, can convert from different fibre types
+
+<p align="center">
+    <img src="images/cable-distribution.png" width="400px" alt="Cable distribution">
+</p>
