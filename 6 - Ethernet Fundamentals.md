@@ -18,7 +18,6 @@
 * **L3 Swtich**: makes routing decisions and connects networks (router), not just network segments (like a L2 switch)
 
 ### Additional Ethernet Features - Switch features
-refer to next sections for VLANs, Trunking, STP
 * **Link aggregation**: combine physical connections into a single logical connection to minimise congestion
 * **Power Over Ethernet (PoE)**: provides electrical power over ethernet to a device (CAT 5 or above, 15.4W/25.5W)
 * **Port Monitoring/Mirroring**: copies all traffic for a port and sends it to another port
@@ -33,3 +32,30 @@ refer to next sections for VLANs, Trunking, STP
 <p align="center">
     <img src="images/stp.png" width="500px" alt="Spanning Tree Protocol example">
 </p>
+
+* **Virtual LAN (VLAN)**: break out ports into different broadcast domains (separate networks on same hardware) - improves security and efficiency
+    * VLAN trunking - multiple VLANs transmitted over the same cable
+
+### Specialised Network Devices
+* **VPN**: create secure VPN or virtual tunnel over an untrusted network (eg. internet)
+* **VPN Concentrator**: terminates VPN tunnels and allows multiple VPN connections
+* **VPN Headend**: is a VPN concentrator used to terminate IPSec VPN tunnels on a router
+* **Firewall**: network security appliance on the boundary of a network, can be software/hardware, stateful/stateless
+* **Next-Generation Firewall (NGFW)**: firewall that does deep packet inspection in L7
+* **Intrusion Detection/Prevention System (IDS/IPS)**:
+    * IDS - recognises attacks through signatures and anomalies 
+    * IPS - recognises and responds
+* **Proxy Server**: is a middle man between a client and external an network - content filtering and logging
+* **Content/Caching Engine**: performs caching functions of a proxy server
+* **Content Switch or Load Balancer**: distribute requests/workload from servers in a server farm (server cluster)
+
+### Other Devices Found in Network
+* **VOIP Phone**: device that connects to IP network to connect to a call manager in the network
+    * Call Manager - performs call processing for hardware/software IP phones
+* **Printers**
+* **Security Cameras**
+* **Physcial Access control devices**: security gates, turnstyles, door locks, etc - on separate network
+* **Heating, Ventilation and Air-Conditioning (HVAC)**
+* **Internet of Things (IoT)**
+* **Industrial Control System (ICS)**: different types of control systems and associated instrumentation (equipment and sensors that interact with real world)
+* **Supervisory Control and Data Acquisition (SCADA)**: acquires/transmits data from different systems to a panel to monitor/control
