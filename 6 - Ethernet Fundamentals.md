@@ -1,4 +1,6 @@
-## Ethernet Fundamentals
+# Ethernet Fundamentals
+
+### Ethernet
 * Ethernet uses contention-based (chaotic) network access
 * **CSMA/CD**: devices listen and wait for turn to transmit, if two devices transmit at the same time then set a random backoff timer for both devices for them to transmit again.
 * **Collision Domains**: all devices on a shared ethernet segment (on same cable/hub), all are suspectible to colliding with each other, putting devices on more collision domains = less collisions.
