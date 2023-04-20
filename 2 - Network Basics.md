@@ -24,12 +24,24 @@
 ## Network Topologies
 
 ### Wired
-* **Bus**: single cable where each device connects to it (vampire tap, T-connector)
-* **Ring**: single cable in a ring where each device connects to ring. A token ring passes a token around one device at a time (like a 'talking stick'). FDDI (fibre) rings are dual rings, if one device goes down then go in other direction to other end, then back for communication.
-* **Star**: all devices connected to a central point (switch)
-* **Hub-and-Spoke**: multiple star topologies with WAN links, used to connect multiple sites
-* **Full-Mesh**: every device is connected to each other
-* **Partial-Mesh**: mix of full-mesh and hub-and-spoke, each node can be rerouted through another link/s
+<table>
+    <tr>
+        <th>Bus</th>
+        <th>Ring</th>
+        <th>Star</th>
+        <th>Hub and Spoke</th>
+        <th>Full Mesh</th>
+        <th>Partial Mesh</th>
+    </tr>
+    <tr style="background-color: #fff">
+        <td style="padding: 0"><img src="images/topologies/bus.png" alt="Bus Topology"></td>
+        <td style="padding: 0"><img src="images/topologies/ring.png" alt="Bus Topology"></td>
+        <td style="padding: 0"><img src="images/topologies/star.png" alt="Bus Topology"></td>
+        <td style="padding: 0"><img src="images/topologies/hub-and-spoke.png" alt="Bus Topology"></td>
+        <td style="padding: 0"><img src="images/topologies/full-mesh.png" alt="Bus Topology"></td>
+        <td style="padding: 0"><img src="images/topologies/partial-mesh.png" alt="Bus Topology"></td>
+    </tr>
+</table>
 
 ### Wireless
 * **Infrastructure Mode**: use wireless access point as a centralised point, has wireless security
