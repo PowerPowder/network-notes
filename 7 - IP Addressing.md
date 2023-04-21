@@ -1,5 +1,6 @@
 ## IP Addressing
 
+### IPv4 Addressing
 * Classes of IPs, subnetting is network bits then host bits
 | Class | 1st Octet Value | Default Subnet Mask | CIDR Notation | Possible Hosts |
 | :-: | :-: | :-: | :-: | :-: |
@@ -39,12 +40,28 @@
     * ZeroConf - updated APIPA, assign IPv4 link-local addresses, resolve computer names to IPs, performs self discovery on network
 
 ### Subnetting
-* Is taking a large network and splitting into smaller networks, improves efficiency, security, bandwidth control
-<p align="center">
-    <img src="images/subnets.png" width="300px" alt="Subnet demo">
-</p>
-* Formula for number of subnets: **2^s**, s is the number of borrowed bits, 192.168.1.0/26, default is /24, 2^2 = 4 subnets
+* **Subnetting**: split a large network into smaller networks, improves efficiency, security, bandwidth control
+* **Number of Subnets**: **2^s**, s is the number of borrowed bits, 192.168.1.0/26, default is /24, 2^2 = 4 subnets
 <p align="center">
     <img src="images/subnets2.png" width="400px" alt="Subnet number">
 </p>
-* Formula for assignable hosts: **2^h - 2**, h is host bits, 2 IPs are needed Network ID (first IP in range, name of network) and Broadcast ID (last IP in range)
+* **Number of Assignable hosts**: **2^h - 2**, h is host bits, 2 IPs are needed Network ID (first IP in range, name of network) and Broadcast ID (last IP in range)
+
+### IPv6 Addressing
+* **IPv6**:
+    * Larger address space 4.2 billion (IPv4) vs 340 undecillion (IPv6)
+    * No broadcasts
+    * No packet fragmentation
+    * Can coexist with IPv4 - dual stack, tunneling (IPv6 traffic in IPv4)
+    * Smaller/Simplified header compared to IPv4
+* **Example**:
+    * 2018:0000:0000:0000:0000:0000:4815:54ae
+    * 2018:0:0:0:0:0:4815:54ae
+    * 2018::4815:54ae - can only do '::' once
+* Address Types:
+    * Unicast - intentify single interface 
+        * Globally routable - public, begins with 2000 to 3999
+        * Link-local - private, begins with FE80, uses SLAAC for stateless address autoconfiguration
+    * Multicast - identify set of interfaces and broadcast to all devices in set, begins with FF
+    * Anycast - identify set of interfaces for a packet to be sent to any member
+* Neighbour Discovery Protocol (NDP): learns L2 addresses on network, router and solicites/advertises, can redirect traffic for the best first hop router
