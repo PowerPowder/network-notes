@@ -16,8 +16,10 @@
 ## Dynamic Name System (DNS)
 * Converts domain names to IP addresses - phone book for the internet
 * **Zone Transfer**: send DNS records from primary nameserver to secondary nameserver, uses TCP
-* **Fully-Qualified Domain Name (FQDN)**: domain name under a top-level provider, the full address eg www.google.com
+* **Fully-Qualified Domain Name (FQDN)**: the full address eg www.google.com
 * **Uniform Resource Locator (URL)**: method of access and FQDN - https://www.google.com
+* **Forward Lookup**: use DNS to get IP for a domain name
+* **Reverse Lookup**: use DNS to get hostname for an IP
 
 ### DNS Hierarchy Tree
 | Domain | Example |
@@ -39,9 +41,14 @@
 | PTR | Pointer | Correlates IP with a domain name |
 | TXT | Text | Adds text into the DNS, store machine-readable data |
 | SRV | Service | Specifies a host and port for a specific service |
+| NS | Nameserver | Indicate which DNS nameserver is authoritive for a domain (CloudFlare) | 
 
-* **Forward Lookup**: use DNS to get IP for a domain name
-* **Reverse Lookup**: use DNS to get hostname for an IP
+* Internal/External DNS: they have a TTL - tells DNS resolver how long to cache query before requesting a new one
+    * **Internal DNS**: allows cloud instances (on same local network) to access each other using internal DNS names
+    * **External DNS**: records created around domain names from central authority and used on the internet
+* **DNS Resolver/Cache**: temporary database that remembers results from DNS server
+    * Recursive lookup - DNS server hunts and reports to resolver, ISP -> go down DNS hierarchy tree
+    * Iterative lookup - DNS resolve queries DNS servers until it finds the right IP for the domain
 
 ## Network Time Protocol (NTP)
 * Synchronise clocks between systems on a packet-switched, variable latency network
