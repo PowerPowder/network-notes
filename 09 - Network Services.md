@@ -10,7 +10,7 @@
     * Offer - does this one look good?
     * Request - yes, I request to use it
     * Acknowledge - ok that's your IP
-* DHCP uses IP address, subnet mask, default gateway IP, DNS server IP
+* DHCP requires IP address, subnet mask, default gateway IP, DNS server IP
 * **DHCP Relay**: forward DHCP packets between clients/servers, used when client and DHCP are not on the same subnet/network
 
 ## Dynamic Name System (DNS)
@@ -19,7 +19,7 @@
 * **Fully-Qualified Domain Name (FQDN)**: the full address eg www.google.com
 * **Uniform Resource Locator (URL)**: method of access and FQDN - https://www.google.com
 * **Forward Lookup**: use DNS to get IP for a domain name
-* **Reverse Lookup**: use DNS to get hostname for an IP
+* **Reverse Lookup**: use DNS to get domain name for an IP
 
 ### DNS Hierarchy Tree
 | Domain | Example |
@@ -52,3 +52,7 @@
 
 ## Network Time Protocol (NTP)
 * Synchronise clocks between systems on a packet-switched, variable latency network
+* How it works:
+    * Stratum - hierachy of reference clocks (starts at statum 1, max is 15), more delay is added for each stratum
+    * Clients
+    * Servers

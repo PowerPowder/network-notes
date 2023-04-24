@@ -9,6 +9,7 @@
 * **Router** - connects networks together, forward traffic with IP addresses
 * **Media** - connects devices together or connects device to a switch port
 * **WAN Link**: connect different geological regions together
+* **Gateway**: on router to route packets in and out of local network
 
 ## Network Resources
 * **Client/Server Model**: dedicated server to provide access to files, scanners/printers, etc
