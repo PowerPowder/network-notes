@@ -55,7 +55,7 @@
 
 ## Fiber Media
 
-* **Fibre optic cable**: uses LED/laser in a thin glass fibre, immune to EMI, 100s of meters, more range and bandwitdth than copper, but is expensive and harder to work with
+* **Fibre optic cable**: uses LED/laser in a thin glass fibre, immune to EMI, 100s of meters, more range and bandwidth than copper, but is expensive and harder to work with
 
 ### Multimode Fibre and Single-Mode Fibre
 | MMF (blue/orange cables) | SMF (yellow cables) |
@@ -110,7 +110,7 @@
 
 ### Components
 * **Demarcation point**: WAN connection enters building - a box that goes from LAN to WAN
-* **Backbone switch**: connects everyything to network from demarcation point
+* **Backbone switch**: connects everything to network from demarcation point
 * **Edge switch**: closer to users, connects to backbone switch
 * **Main Distribution Frame (MDF)**: telecommunications closet, is the main starting point for all interior cabling (like a tree trunk)
 * **Cable tray**: structure to securely support cables going horizontally and vertically
@@ -120,7 +120,7 @@
     * **110 block**: voice/data applications, CAT 5 and above
     * Krone block: proprietary European version of 110 block
     * BIX block: proprietary block
-* **Patch panel**: device wwith jacks that connects wiring from jack to network switch - protects switch ports from getting ports plugged in and out repeatedly. There are wall mounted and server rack panels 
+* **Patch panel**: device with jacks that connects wiring from jack to network switch - protects switch ports from getting ports plugged in and out repeatedly. There are wall mounted and server rack panels 
     * Copper patch panels: punches down on cable
     * Fibre patch panels: cable is not punched down, can convert from different fibre types
 

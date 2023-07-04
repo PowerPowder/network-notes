@@ -46,8 +46,8 @@
 
 ### Spread Spectrum Wireless Transmissions
 * **Direct-Sequence Spread Spectrum (DSSS)**
-* **Freuqncy-Hopping Spread Spectrum (FHSS)**
-* **Orthogonal Freuqncy-Division Multiplexing (OFDM)**
+* **Frequency-Hopping Spread Spectrum (FHSS)**
+* **Orthogonal Frequency-Division Multiplexing (OFDM)**
 
 ### Frequencies and Channels
 * **Channel**: virtual medium where wireless networks can send/receive data - virtual pipes
@@ -87,8 +87,8 @@
 
 * **Pre-Shared Key**: AP and client use same encryption key
 * **Wired Equivalent Privacy (WEP)**: claimed to be as secure as wired networks, 24-bit Initialisation Vector (IV) sent in cleartext, encryption key is 64/128 bit
-* **Wifi Protected Access (WPA)**: replacment to WEP
-    * Tempporal Key Integrityy Protocol (TKIP) - 48 bit IV, RC4 encryption used
+* **Wifi Protected Access (WPA)**: replacement to WEP
+    * Temporal Key Integrity Protocol (TKIP) - 48 bit IV, RC4 encryption used
     * Message Integrity Check (MIC) - confirms data was not modified during transit (MITM attack)
     * Enterprise Mode - users auth before sending keys, keys are temporary
 * **WPA2**: stronger encryption, integrity checking through CCMP

@@ -7,6 +7,14 @@
 <u>**D**</u>ata
 <u>**P**</u>rocessing
 
+<u>**P**</u>eople
+<u>**D**</u>on't
+<u>**N**</u>eed
+<u>**T**</u>he
+<u>**S**</u>tupid
+<u>**P**</u>ackets
+<u>**A**</u>nyway
+
 ## L1 - Physical (Bits)
 * **Media** - cables (fibre optic, ethernet, coaxial), radio (bluetooth, wifi, nfc)
 * **Devices** - hubs, access points, media converters
@@ -18,7 +26,7 @@
 
 #### Multiplexing (all for baseband) - TDM, StatTDM, FDM
 * **Time-Division Multiplexing**: take turns using allocated time slots
-* **Statistical TDM**: dynamically allocate time slots to devices who need bandwitdth
+* **Statistical TDM**: dynamically allocate time slots to devices who need bandwidth
 * **Frequency-Division Multiplexing**: split into channels like broadband, each person gets an amount of portions
 
 ## L2 - Data Link (Frames)
@@ -75,7 +83,7 @@
 * **Data formatting**: data is formatted to have compatibility with different devices - ASCII (ensures readability, standardised formatting, syntax for L7), GIF, JPG, PNG, etc
 * **Encryption**: encrypt data to stop eavesdroppers from seeing private information (usernames, passwords, credit card info) as it is transmitted - Transport Layer Security (TLS) or Secure Sockets Layer (SSL)
 * **Examples**:
-    * Scripting languages (for formating data, HTML, XML, PHP, JS)
+    * Scripting languages (for formatting data, HTML, XML, PHP, JS)
     * Standard text (ASCII, Unicode, EBCDIC)
     * GIF, JPG TIF SVG PNG, etc
     * MPG, MOV, etc
@@ -113,7 +121,7 @@
 
 * **TCP header control flags**:
     * SYN (Synchronisation) - sync connection during 3WH
-    * ACK (Acknowledgement) - acknowledge successful reciept of the packets during 3WH
+    * ACK (Acknowledgement) - acknowledge successful receipt of the packets during 3WH
     * FIN (Finished) - tear down virtual connection created by 3WH and SYN flag
     * RST (Reset) - used when client/server receives an unexpected packet during connection
     * PSH (Push) - data is given high priority by sender

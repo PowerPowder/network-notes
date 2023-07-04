@@ -16,7 +16,7 @@
 
 ### Application
 * Session, Presentation, Application layers
-* Programs interface with transport layer by session managment, users interact with network through programs
+* Programs interface with transport layer by session management, users interact with network through programs
 * HTTP, Telnet, FTP, SSH, SNMP, DNS, SMTP, SSL/TLS
 
 ## Data Transfer Over Networks
@@ -45,7 +45,7 @@
 | POP3 | 110 | Receive incoming emails, stores and forward communication |
 | NTP | 123 | Keep accurate time for clients on a network |
 | NetBIOS | 139 | Allows applications on separate devices to share files/printers on LAN |
-| IMAP | 143 | Retreive emails over a TCP connection, keeps emails synced on all devices |
+| IMAP | 143 | Retrieve emails over a TCP connection, keeps emails synced on all devices |
 | SNMP | 161/162 | Collect info on network devices (routers, switches, etc) and monitor status |
 | LDAP | 389 | Insecure directory service on network |
 | HTTPS | 443 | Secure web browsing, uses TLS/SSL tunnel |
@@ -59,7 +59,7 @@
 | SQLnet Protocol | 1521 | Allows client to communicate to Oracle database engine |
 | MySQL | 3306 | Allows client to communicate to the MySQL database engine |
 | RDP | 3389 | Control Windows client/server remotely with a full GUI |
-| SIP | 5060/5061 | Singalling/controlling media communication sessions (VOIP, video calls, instant messaging) |
+| SIP | 5060/5061 | Signalling/controlling media communication sessions (VOIP, video calls, instant messaging) |
 
 ## IP Protocol Types
 * **TCP**: conducts a three-way-handshake between client and server, then establishes connection

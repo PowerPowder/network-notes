@@ -59,9 +59,9 @@
     * 2018:0:0:0:0:0:4815:54ae
     * 2018::4815:54ae - can only do '::' once
 * Address Types:
-    * Unicast - intentify single interface 
+    * Unicast - intensify single interface 
         * Globally routable - public, begins with 2000 to 3999
         * Link-local - private, begins with FE80, uses SLAAC for stateless address autoconfiguration
     * Multicast - identify set of interfaces and broadcast to all devices in set, begins with FF
     * Anycast - identify set of interfaces for a packet to be sent to any member
-* Neighbour Discovery Protocol (NDP): learns L2 addresses on network, router and solicites/advertises, can redirect traffic for the best first hop router
+* Neighbour Discovery Protocol (NDP): learns L2 addresses on network, router and solicits/advertises, can redirect traffic for the best first hop router

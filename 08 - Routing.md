@@ -35,7 +35,7 @@
     * Distance vector - copy of routing table sent to neighbours, all routers update on topology change (distance)
     * Link state - knows all paths other routers can reach (speed)
     * Hybrid
-* **Route believability**: Directly Connected > Staticly Configured > EIGRP > OSPF > RIP > Ext EIGRP > Unknown
+* **Route believability**: Directly Connected > Statically Configured > EIGRP > OSPF > RIP > Ext EIGRP > Unknown
 
 | Routing Protocol | Description | Type | IGP/EGP |
 | :-: | :-: | :-: | :-: |
@@ -43,7 +43,7 @@
 | Open Shortest Path First (OSPF) | Uses link speed as cost | Link state | IGP |
 | Intermediate System-to-Intermediate System (IS-IS) | Functions like OSPF, link speed as cost | Link state | IGP |
 | Enhanced Interior Gateway Routing Protocol (EIGRP) | Hybrid, uses bandwidth (speed) and delay (hops) | Advanced distance vector | IGP |
-| Border Gateway Protocol (BGP) | Uses number of autonomous system hops (groups of routers), backbone of the internet, slow convergeance | Path vector | EGP |
+| Border Gateway Protocol (BGP) | Uses number of autonomous system hops (groups of routers), backbone of the internet, slow convergence | Path vector | EGP |
 
 ## Address Translation
 * **Network Address Translation (NAT)**: translates private IP to public IP
@@ -65,6 +65,6 @@
 * Multicast sender sends traffic to multicast group (Class D IP) - one packet = many devices receiving
 * Protocols:
     * **Internet Group Management Protocol (IGMP)** - tell routers which interfaces have multicast receivers, allows clients to join multicast group
-    * **Protocol Independent Multicast (PIM)** - routes multicast traffic between routerrs and forms a multicast distribnution tree
+    * **Protocol Independent Multicast (PIM)** - routes multicast traffic between routers and forms a multicast distribution tree
         * Dense Mode - flood and prune to form optimal distribution tree
         * Sparse Mode - uses shared distribution tree initially, finds best tree over time, switches once the best tree is found

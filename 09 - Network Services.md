@@ -41,7 +41,7 @@
 | PTR | Pointer | Correlates IP with a domain name |
 | TXT | Text | Adds text into the DNS, store machine-readable data |
 | SRV | Service | Specifies a host and port for a specific service |
-| NS | Nameserver | Indicate which DNS nameserver is authoritive for a domain (CloudFlare) | 
+| NS | Nameserver | Indicate which DNS nameserver is authoritative for a domain (CloudFlare) | 
 
 * Internal/External DNS: they have a TTL - tells DNS resolver how long to cache query before requesting a new one
     * **Internal DNS**: allows cloud instances (on same local network) to access each other using internal DNS names
@@ -53,6 +53,6 @@
 ## Network Time Protocol (NTP)
 * Synchronise clocks between systems on a packet-switched, variable latency network
 * How it works:
-    * Stratum - hierachy of reference clocks (starts at statum 1, max is 15), more delay is added for each stratum
+    * Stratum - hierarchy of reference clocks (starts at stratum 1, max is 15), more delay is added for each stratum
     * Clients
     * Servers

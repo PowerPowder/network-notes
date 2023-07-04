@@ -1,6 +1,6 @@
 # Network Basics
 
-## Network componenents
+## Network components
 * **Client** - end user device to access network
 * **Server** - provides resources to network
 * **Hub** - receives info from one port, sends that info to all other ports
@@ -47,10 +47,10 @@
 ### Wireless
 * **Infrastructure Mode**: use wireless access point as a centralised point, has wireless security
 * **Ad-hoc Mode**: connect device to device dynamically, uses a p2p network to communicate
-* **Wireless Mesh**: combine  wireless technologies (wifi, microwave, satelite, radio) to create a mesh network
+* **Wireless Mesh**: combine  wireless technologies (wifi, microwave, satellite, radio) to create a mesh network
 
 ## Internet of Things (IoT)
-* **802.11**: wireless networking in infrastrucutre/ad-hoc mode
+* **802.11**: wireless networking in infrastructure/ad-hoc mode
 * **Bluetooth**: low-energy version of bluetooth, lose keys - bluetooth to phone to cellular
 * **Radio-frequency Identification (RFID)**: embedded chip with electro-magnetic fields to read tag
 * **Near-field Communication (NFC)**: 4cm range communication - apple-pay

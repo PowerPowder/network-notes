@@ -18,7 +18,7 @@
     * High-Frequency Radio - very slow connection, used in disaster relief and military scenarios
 
 ## WAN Technologies
-* **Dedicated Leased Line**: bandwitdth available at all times, Channel/Data Service Unit (CSU/DSU) terminates signal at demarc point, digital signal circuits - T1 (1.5Mbps), T3 (45Mbps), E1 (2.0Mbps)
+* **Dedicated Leased Line**: bandwidth available at all times, Channel/Data Service Unit (CSU/DSU) terminates signal at demark point, digital signal circuits - T1 (1.5Mbps), T3 (45Mbps), E1 (2.0Mbps)
 * **Metro Ethernet**: ethernet interface offered by service provider, technology used is hidden from customer
 * **Point-to-Point Protocol (PPP)**: L2 protocol on dedicated lease lines to transmit L3 protocols
     * Each layer 3 control protocol runs an instance of PPP's Link Control Protocol (LCP)
